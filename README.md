@@ -1,2 +1,5 @@
 # uestc-online-server
-out take server
+加入了后台逻辑
+现阶段需求，登录的tap需要美化，支付页面的总额板块需要美化
+拼单界面UI后台编写
+文档编写，视频录制
