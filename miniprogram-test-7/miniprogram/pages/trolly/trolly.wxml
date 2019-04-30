@@ -1,0 +1,88 @@
+<van-notice-bar
+  left-icon= "/pages/image/pd.png"
+  text="🌟BNU ONLINE校园生活服务平台🌟 【校园周边带餐服务】具体说明如下： 我们即将开始试营业，【配送费】仅需【一元】！！你可以在校园周边任意可选店铺进行拼单，进行跨店铺订购，我们的派送员会依次取到您的订单后一起派送到您的指定地点
+/>
+
+<view class="row">
+<view class="scrollbadge">
+<van-badge-group active="{{ active }}" bind:change="onChange">
+  <van-badge title="大通冰室"  bindtap="datong"   />
+  <van-badge title="花甲米线" bindtap="huajia"  />
+  <van-badge title="鸡翅包肉" bindtap="wings" />
+  <van-badge title="烤肥肠"  bindtap="feichang"/>
+   <van-badge title="牛肉饭"bindtap="niurou" />
+    <van-badge title="火锅串串"bindtap="chuanchuan" />
+     <van-badge title="人民食堂"bindtap="shitang" />
+      <van-badge title="书亦烧仙草"bindtap="shaoxiancao" />
+      <van-badge title="火锅粉" bindtap="huoguo"/>
+      <van-badge title="臭豆腐"bindtap="toufu" />
+      <van-badge title="烤鱿鱼"bindtap="youyu" />
+</van-badge-group>
+</view>
+
+<view class="kuang">
+<view wx:if="{{view=='wings'}}">
+<view class="card">
+<van-card
+  num="2"
+  tag="推荐"
+  price="12.00"
+  desc="无骨鸡翅里面满满的牛肉哦"
+  title="鸡翅包牛肉"
+  thumb="/pages/image/wings.png"
+>
+  <view slot="footer">
+    <image src="/pages/image/plus.png" bindtap="animation" class="tap_icon"></image>
+    
+  </view>
+</van-card>
+</view>
+</view>
+
+
+<view wx:if="{{view=='datong'}}"  animation="{{animation}}">
+<view class="card">
+<van-card
+  num="1"
+  tag="推荐"
+  price="12.00"
+  desc="冰爽的柠檬配果汁"
+  title="柠檬利宾纳"
+  thumb="/pages/image/lemon.png"
+>
+  <view slot="footer">
+ <image src="/pages/image/plus.png" bindtap="rotate" class="tap_icon"></image>
+    
+  </view>
+</van-card>
+</view>
+</view>
+
+<view wx:if="{{view=='huajia'}}">
+<view class="card">
+<van-card
+  num="1"
+  tag="推荐"
+  price="12.00"
+  desc="香辣味的招牌花甲米线"
+  title="花甲米线"
+  thumb="/pages/image/mixian.png"
+>
+  <view slot="footer">
+  <image src="/pages/image/plus.png" bindtap="rotate" class="tap_icon"></image>
+    
+  </view>
+</van-card>
+</view>
+</view>
+<button  class="page-body-button" type="primary"   bindtap='f2'>支付</button>
+
+
+
+
+</view>
+
+
+
+</view>
+

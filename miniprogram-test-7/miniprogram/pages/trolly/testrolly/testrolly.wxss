@@ -1,0 +1,45 @@
+.scrollbadge{
+  width: 180rpx;
+  height: 1000rpx;
+  overflow: scroll;
+}
+
+.row {
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.card{
+  width:280px;
+  height:200px;
+}
+.kuang{
+  width:500rpx;
+  height:2000rpx;
+}
+
+.page-body-button {
+  margin-left:40px;
+  margin-top:30px;
+  font-size:35rpx;
+  width:50%;
+  height:45px;
+  
+}
+
+.tap_icon{
+  height:17px;
+  width:17px
+}
+
+.address-add {
+position: fixed;
+bottom: 0;
+width: 100%;}
+
+.address-list {
+
+margin-bottom: 46px;
+}

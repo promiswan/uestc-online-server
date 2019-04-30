@@ -1,0 +1,65 @@
+<view class="titlepart">
+<image src="/pages/image/point.png "  class="smallicon"></image>
+<text class="firsttext">共有{{}}件商品</text>
+</view>
+
+<view class="mainborder">
+<view class="title">
+<text>您的订单</text>
+</view>
+<view class="item">
+<radio class="radiotype2"  checked="true"></radio>
+
+<view class="heng">
+<image src="/pages/image/food.png "  class="food"></image>
+<view class="text1">
+<text >小炒肉 </text>
+<text >辣</text>
+<text >X1（25元）</text>
+</view>
+</view>
+</view>
+
+<view class="item">
+<radio class="radiotype2"  checked="true"></radio>
+
+<view class="heng">
+<image src="/pages/image/food.png "  class="food"></image>
+<view class="text1">
+<text >小炒肉 </text>
+<text >辣</text>
+<text >X1（25元）</text>
+</view>
+</view>
+</view>
+
+<view class="item">
+<radio class="radiotype2"  checked="true"></radio>
+
+<view class="heng">
+<image src="/pages/image/food.png "  class="food"></image>
+<view class="text1">
+<text >小炒肉 </text>
+<text >辣</text>
+<text >X1（25元）</text>
+</view>
+</view>
+</view>
+
+<view class="item">
+<radio class="radiotype2"  checked="true"></radio>
+
+<view class="heng">
+<image src="/pages/image/food.png "  class="food"></image>
+<view class="text1">
+<text >小炒肉 </text>
+<text >辣</text>
+<text >X1（25元）</text>
+</view>
+</view>
+</view>
+
+
+</view>
+<button  class="page-body-button" type="primary"   bindtap='f2'>确认支付</button>
+

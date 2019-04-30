@@ -1,0 +1,18 @@
+<block wx:for="{{userList}}">
+<navigator url='../user/user?id={{item._openid}}'>
+<van-card
+  desc="{{item.language}}"
+  title="{{item.nickName}}"
+  centered
+  thumb-class="thumb-class"
+  thumb="{{item.avatarUrl}}"
+/>
+</navigator>
+</block>
+<view class='floatBtn'>
+<button size='mini' 
+bindtap='navigatTo' 
+type='primary'
+open-type='getUserInfo'
+bindgetuserinfo='getUserInfo'>+</button>
+</view>

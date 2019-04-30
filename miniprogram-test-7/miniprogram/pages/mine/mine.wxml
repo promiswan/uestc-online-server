@@ -1,0 +1,85 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="container"  >
+  <view >
+    <image  class="portrait" src="{{avatarUrl}}"></image>
+  </view>
+  <view class="ID-v">
+    <text class="ID">{{language}}</text>
+  </view>
+  <view>
+    <text class="userName">{{nickName}}</text>
+    <view class='floatBtn'>
+<button size='mini' 
+bindtap='navigatTo' 
+type='primary'
+open-type='getUserInfo'
+bindgetuserinfo='getUserInfo'>登录</button>
+</view>
+  </view>
+  <view class="information">
+    <van-cell-group>
+      <van-cell
+        title="个人信息"
+        is-link
+      />
+   </van-cell-group>
+  </view>
+</view>
+
+<view class="orders">
+  <van-cell-group>
+    <van-cell
+      title="我的订单"
+      is-link
+      value="查看全部订单"
+    />
+  </van-cell-group>
+</view>
+
+<view class="section">
+  <view class="cart">
+    <van-icon name="cart-o" size="34px" />
+    <text>\n待付款</text>
+  </view>
+  <view class="cart">
+    <van-icon name="shopping-cart-o" size="34px" />
+    <text>\n待发货</text>
+  </view>
+  <view class="cart">
+    <van-icon name="cart-circle-o" size="34px" />
+    <text>\n待收货</text>
+  </view>
+</view>
+
+  <van-cell-group>
+    <van-cell
+      title="我的优惠"
+      is-link
+    />
+  </van-cell-group>
+
+  <van-cell-group>
+    <van-cell
+      title="我的活动"
+      is-link
+    />
+  </van-cell-group>
+
+<view class="help" bindtap='goToHelp'>
+  <van-cell-group>
+    <van-cell
+      title="帮助"
+      is-link
+    />
+  </van-cell-group>
+</view>
+
+<view class="info" bindtap='goToInfo'>
+  <van-cell-group>
+    <van-cell
+      title="关于BUN ONLINE"
+      is-link
+    />
+  </van-cell-group>
+</view>

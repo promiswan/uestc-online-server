@@ -1,0 +1,55 @@
+
+<van-notice-bar
+  left-icon= "/pages/image/pd.png"
+  text="🌟BNU ONLINE校园生活服务平台🌟 【校园周边带餐服务】具体说明如下： 我们即将开始试营业，【配送费】仅需【一元】！！你可以在校园周边任意可选店铺进行拼单，进行跨店铺订购，我们的派送员会依次取到您的订单后一起派送到您的指定地点
+  bindtap="onAdd"
+/>
+
+
+<view class="row">
+<view class="scrollbadge">
+<van-badge-group active="{{ active }}" bind:change="onChange">
+  <van-badge title="大通冰室"  bindtap="touch"  data-db="datong"  />
+  <van-badge title="花甲米线" bindtap="touch"  data-db="huajia"  />
+  <van-badge title="鸡翅包肉"bindtap="touch"  data-db="jichi"/>
+  <van-badge title="烤肥肠" bindtap="touch" data-db="feichang" />
+   <van-badge title="牛肉饭" bindtap="touch"data-db="niurou" />
+    <van-badge title="火锅串串"bindtap="touch"  data-db="chuanchuan" />
+     <van-badge title="人民食堂"bindtap="touch" data-db="shitang" />
+      <van-badge title="书亦烧仙草"bindtap="touch" data-db="xiancao" />
+      <van-badge title="火锅粉" bindtap="touch" data-db="huoguo"/>
+      <van-badge title="臭豆腐"bindtap="touch"  data-db="doufu"/>
+      <van-badge title="烤鱿鱼"bindtap="touch"  data-db="youyu"/>
+</van-badge-group>
+</view>
+
+
+
+
+<view class="kuang">
+<view class="card">
+<view class="address-list">
+<view wx:for="{{query}}">
+<van-card  
+  num="{{item.count}}"
+  tag="推荐"
+  price="{{item.price}}"
+  desc="{{item.description}}"
+  title="{{item.name}}" 
+  thumb="{{item.photo}}"
+>
+  <view slot="footer">
+    <image src="/pages/image/plus.png" bindtap="showToast" data-count='{{item.count}}' data-price='{{item.price}}'  data-column="{{item.column}}" class="tap_icon"></image>
+  </view>
+</van-card>
+</view>
+</view>
+<view class="address-add">
+<button  class="page-body-button" type="primary"   bindtap='f2'>支付</button>
+<text>您已选购{{totalprice}}元的商品</text>
+</view>
+</view>
+</view>
+
+</view>
+

@@ -1,0 +1,35 @@
+.scrollbadge{
+  width: 180rpx;
+  height: 1000rpx;
+  overflow: scroll;
+}
+
+.row {
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.card{
+  width:280px;
+  height:200px;
+}
+.kuang{
+  width:500rpx;
+  height:2000rpx;
+}
+
+.page-body-button {
+
+  margin-top:250px;
+  font-size:35rpx;
+  width:120px;
+  height:45px;
+  
+}
+
+.tap_icon{
+  height:17px;
+  width:17px
+}
